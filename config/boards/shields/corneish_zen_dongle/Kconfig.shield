@@ -2,4 +2,4 @@
 # SPDX-License-Identifier: MIT
 
 config SHIELD_CORNEISH_ZEN_DONGLE
-	def_bool $(shields_list_contains,zen_dongle)
+	def_bool $(shields_list_contains,corneish_zen_dongle)
