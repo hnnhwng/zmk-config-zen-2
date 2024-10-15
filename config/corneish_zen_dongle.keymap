@@ -4,10 +4,10 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-  chosen {
-    zmk,physical-layout = &foostan_corne_6col_layout;
-    //zmk,matrix_transform = &five_column_transform;
-  };
+    chosen {
+        zmk,physical-layout = &foostan_corne_6col_layout;
+        // zmk,matrix_transform = &foostan_corne_5col_layout;
+    };
 };
 
 / {
@@ -18,11 +18,12 @@
             then-layer = <3>;
         };
     };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-                label = "BASE";
+            label = "BASE";
 // -----------------------------------------------------------------------------
 // | TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  | BSP |
 // | CTL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |  '  |
@@ -35,8 +36,9 @@
                       &kp LGUI  &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
             >;
         };
+
         lower_layer {
-                label = "LOWER";
+            label = "LOWER";
 // -----------------------------------------------------------------------------
 // |     |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |     |
 // |     |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |     |
@@ -49,8 +51,9 @@
                      &trans &trans &trans      &trans   &trans   &trans
             >;
         };
+
         raise_layer {
-                label = "RAISE";
+            label = "RAISE";
 // -----------------------------------------------------------------------------
 // |     |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL |
 // |     |     |     |     |     |     |   |  -  |  =  |  {  |  }  |  \  |  `  |
@@ -60,11 +63,12 @@
 &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp DEL
 &trans &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
 &trans &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                           &trans &trans &trans      &trans &trans &trans
+                       &trans   &trans   &trans      &trans &trans &trans
             >;
         };
+
         adjust_layer {
-                label = "ADJUST";
+            label = "ADJUST";
 // -----------------------------------------------------------------------------
 // | F12 |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 | F10 | F11 |
 // |     |     |     |     |     |     |   | PRV |  PP | NXT | MUT | VDN | VUP |
