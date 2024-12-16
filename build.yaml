@@ -2,10 +2,8 @@ include:
   - board: corneish_zen_v2_left
     # snippet: zmk-usb-logging  # uncomment to enable logging
   - board: corneish_zen_v2_right
-  - board: corneish_zen_v2_left
-  # - board: corneish_zen_v1_left
-  # - board: corneish_zen_v1_right
-  - board: nice_nano_v2
+    # snippet: zmk-usb-logging  # uncomment to enable logging
+  - board: seeeduino_xiao_ble
     shield: corneish_zen_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
