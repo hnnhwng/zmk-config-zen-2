@@ -20,5 +20,4 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_SPLIT
 	default y
 
-
 endif # SHIELD_CORNEISH_ZEN_DONGLE
