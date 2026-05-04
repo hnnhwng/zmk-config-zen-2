@@ -23,4 +23,7 @@ config ZMK_SPLIT
 config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
 	default 2
 
+config ZMK_KSCAN_GPIO_DRIVER
+	default y
+
 endif # SHIELD_CORNEISH_ZEN_DONGLE
